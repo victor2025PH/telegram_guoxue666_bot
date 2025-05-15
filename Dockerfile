@@ -1,8 +1,8 @@
-FROM python:3.11-slim
+# 使用官方 Python 镜像
+FROM python:3.10
 
 WORKDIR /app
-
-COPY . /app
+COPY . .
 
 RUN pip install --no-cache-dir -r requirements.txt
 
